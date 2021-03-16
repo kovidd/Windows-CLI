@@ -17,7 +17,7 @@ It will be in one of the following two formats:
 The expected format is `[ [column names], [first row], [second row], ... ]`. An example invocation of your program using this format would be:
 
 ```
-your_program '[ ["a","b","c"], [1,2,null], [2,3,4], [5,null,6] ]'
+python3 map_csv.py '[ ["a","b","c"], [1,2,null], [2,3,4], [5,null,6] ]'
 ```
 
 **B**) **a list of objects**
@@ -29,7 +29,7 @@ Each row is represented by an object containing the variables set for that row.
 Accordingly, this form of input is convenient for sparse data sets. An example invocation of your program using this format would be:
 
 ```
-your_program '[ { "a":1, "b":2 }, { "a": 2, "b":3, "c":4 }, { "c":6, "a":5 } ]'
+python3 map_csv.py '[ { "a":1, "b":2 }, { "a": 2, "b":3, "c":4 }, { "c":6, "a":5 } ]'
 ```
 
 ## Output
@@ -53,3 +53,7 @@ The order of the values in each variable's list should be the same as the order 
 |1|2||
 |2|3|4|
 |5||6|
+
+## Usage 
+python3 map_csv.py '[ { "a":1, "b":2 }, { "a": 2, "b":3, "c":4 }, { "c":6, "a":5 } ]'
+python3 map_csv.py '[ ["a","b","c"], [1,2,null], [2,3,4], [5,null,6] ]'
