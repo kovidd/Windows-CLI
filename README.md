@@ -56,4 +56,5 @@ The order of the values in each variable's list should be the same as the order 
 
 ## Usage 
 python3 map_csv.py '[ { "a":1, "b":2 }, { "a": 2, "b":3, "c":4 }, { "c":6, "a":5 } ]'
+
 python3 map_csv.py '[ ["a","b","c"], [1,2,null], [2,3,4], [5,null,6] ]'
